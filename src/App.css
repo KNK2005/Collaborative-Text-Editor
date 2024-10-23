@@ -1,0 +1,192 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;            
+}
+
+.main-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+}
+
+nav {
+  border-bottom: 4px solid black;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: lightgray;
+}
+
+#page {
+  max-width: 700px;
+  margin: auto;
+  padding-top: 72px;
+}
+
+.logo{
+  align-items: left;
+}
+
+.slogan{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 24px;
+}
+
+.links{
+  text-align: right;
+  position: fixed;
+  top:0;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 24px 32px;
+}
+
+nav a:hover {
+  background: black;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height for centering vertically */
+}
+
+#drop-area {
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  width: 600px;
+  height: 200px;
+  text-align: center;
+  padding: 1px;
+  margin-bottom: 20px; /* Space between the drop area and input */
+  transition: background-color 0.3s;
+  background-color: #f9f9f9;
+}
+
+#drop-image {
+  max-width: 30%; 
+  max-height: 30%; /* Make sure the image fits within the drop area */
+  margin-top: 10px; /* Space above the image */
+}
+
+#drop-area.hover {
+  background-color: #e0e0e0; /* Change background on hover */
+}
+
+#file-label {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  width: 300px; /* Same width as drop area */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+input, textarea {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  border: 2px solid lightgray;
+  margin-bottom: 16px;
+  align-self: center;
+}
+
+#login {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px;
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#signup {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px;
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+button {
+  padding: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+.link {
+  font-size: 12px;
+  color: #777;
+  margin-top: 20px;
+}
+
+.link a {
+  color: #333;
+  text-decoration: none;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,52 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e5e5e5; /* Light gray background color */
+    padding: 10px 20px;
+    border-bottom: 2px solid black;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 50px; /* Adjust as needed */
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .logo span {
+    font-family: 'cursive';
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .slogan {
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    color: black;
+    font-size: 1rem;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
