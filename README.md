@@ -1,100 +1,127 @@
 
 # Collaborative Text Editor
 
-A web-based collaborative text editor supporting multiple file formats and offering essential writing tools like grammar checking, plagiarism detection, and generative text suggestions. This editor aims to simplify document management and enhance the collaborative writing experience.
+A **web-based collaborative text editor** designed to enhance writing productivity by supporting multiple file formats and providing essential tools such as **grammar checking**, **plagiarism detection**, and **AI-powered text suggestions**. With this editor, managing documents becomes seamless, while collaboration is intuitive and efficient.
+
+---
 
 ## 🚀 Features
 
-### Supported File Types:
-- `.txt`
-- `.doc`
-- `.docx`
+### Supported File Types
+- **`.txt`**  
+- **`.doc`**  
+- **`.docx`**
 
-### Basic Features:
-- **Grammar Checker:**  
-  Automatically highlights grammatical errors and suggests corrections.
+### Core Functionalities
+- **Grammar Checker (via Grammarly API):**  
+  Automatically identifies grammatical errors and suggests improvements in real time.
 
-- **Plagiarism Detection:**  
-  Compares the content against sources to detect copied text.
+- **Plagiarism Detection (via Winston AI):**  
+  Detects copied or unoriginal content by comparing text against multiple sources.
 
-- **Generative Text Filling:**  
-  Provides AI-powered suggestions to auto-complete or enhance text.
+- **Generative Text Suggestions:**  
+  Uses AI to provide auto-completion or enhancement suggestions for text input.
 
 - **Save Files:**  
-  Allows saving documents in various formats (.txt, .doc, .docx).
+  Save documents in supported formats (.txt, .doc, .docx) with ease.
 
 - **URL Support:**  
-  Automatically detects and hyperlinks valid URLs in the text.
+  Automatically recognizes valid URLs and converts them into clickable hyperlinks.
+
+---
 
 ## 🔮 Future Features
 - **Read-Only Mode:**  
-  Users will be able to open documents in a non-editable view.
+  Enable non-editable views for documents, useful for reviewers and readers.
 
 - **Live Text Synchronization:**  
-  Enables real-time collaboration with multiple users editing the same document.
+  Allow multiple users to collaborate in real time, with all changes reflected instantly across devices.
 
-## 🛠️ Setup Instructions
+---
 
-1. **Clone the Repository:**
-   ```bash
-   git clone git@github.com:KNK2005/Collaborative-Text-Editor.git
-   cd Collaborative-Text-Editor
-   ```
+## 🛠️ Technologies Used
+- **Grammarly API:** For real-time grammar checking.  
+- **Winston AI:** For robust plagiarism detection.  
+- **Firebase Authentication:** For secure user authentication and session management.  
+- **MongoDB:** For storing files and document metadata.  
 
-2. **Install Dependencies:**
-   ```bash
-   npm install
-   ```
-
-3. **Start the Server:**
-   ```bash
-   npm start
-   ```
-
-4. **Access the Application:**
-   Open your browser and go to:
-   ```
-   http://localhost:3000
-   ```
+---
 
 ## 📂 Folder Structure
 ```
 Collaborative-Text-Editor/
 ├── node_modules/      # Dependencies (excluded from version control)
-├── public/            # Static assets (HTML, CSS, client-side JS)
-├── src/               # Source code for the backend and logic
+├── public/            # Static assets (HTML, CSS, client-side JavaScript)
+├── src/               # Backend logic and main source code
 ├── .gitignore         # Files/folders to ignore in version control
 ├── package.json       # Project metadata and dependencies
 ├── README.md          # Project overview and instructions
 ```
 
-## 🤝 Contributing
+---
 
-We welcome contributions! Please follow these steps:
+## 🛠️ Setup Instructions
 
-1. Fork the repository.
-2. Create a new branch:  
+1. **Clone the Repository:**  
    ```bash
-   git checkout -b feature-name
+   git clone git@github.com:KNK2005/Collaborative-Text-Editor.git
+   cd Collaborative-Text-Editor
    ```
-3. Make your changes and commit:  
+
+2. **Install Dependencies:**  
    ```bash
-   git commit -m "Added feature-name"
+   npm install
    ```
-4. Push to your branch:  
+
+3. **Set Up Firebase and MongoDB:**  
+   - Create a Firebase project for **authentication**.
+   - Set up a **MongoDB** database for file storage.
+   - Add environment variables for Firebase and MongoDB configurations.
+
+4. **Start the Application:**  
    ```bash
-   git push origin feature-name
+   npm start
    ```
-5. Open a pull request on GitHub.
 
-## 📄 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
-## 📧 Contact
-
-If you have any questions or feedback, feel free to open an issue or contact the project maintainers through GitHub.
+5. **Access the Editor:**  
+   Open your browser and navigate to:  
+   ```
+   http://localhost:3000
+   ```
 
 ---
 
+## 🤝 Contributing
 
+We welcome contributions from the community! Please follow these steps:
+
+1. **Fork the repository** on GitHub.
+2. **Create a new branch**:  
+   ```bash
+   git checkout -b feature-branch-name
+   ```
+3. **Make your changes** and **commit**:  
+   ```bash
+   git commit -m "Added new feature or fixed an issue"
+   ```
+4. **Push to your branch**:  
+   ```bash
+   git push origin feature-branch-name
+   ```
+5. **Open a pull request** on GitHub with a brief description of your changes.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**. For more details, please refer to the [LICENSE](LICENSE) file.
+
+---
+
+## 📧 Contact
+
+For any questions, feedback, or bug reports, please open an issue on GitHub or reach out to the project maintainers.
+
+---
+
+This editor is built to foster collaborative writing, with powerful tools integrated for error-free, creative, and efficient documentation. We look forward to your contributions and feedback to make this tool even better! 🚀
