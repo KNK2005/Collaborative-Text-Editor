@@ -114,7 +114,6 @@ We welcome contributions from the community! Please follow these steps:
 
 ## 📄 License
 
-# License
 
 This project is licensed under the **MIT License**. For more details, please refer to the [LICENSE.md](LICENSE.md) file or visit the [MIT License website](https://mit-license.org/).
 
