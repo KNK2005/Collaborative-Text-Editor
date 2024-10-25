@@ -1,70 +1,100 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Collaborative Text Editor
 
-## Available Scripts
+A web-based collaborative text editor supporting multiple file formats and offering essential writing tools like grammar checking, plagiarism detection, and generative text suggestions. This editor aims to simplify document management and enhance the collaborative writing experience.
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+### Supported File Types:
+- `.txt`
+- `.doc`
+- `.docx`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Basic Features:
+- **Grammar Checker:**  
+  Automatically highlights grammatical errors and suggests corrections.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Plagiarism Detection:**  
+  Compares the content against sources to detect copied text.
 
-### `npm test`
+- **Generative Text Filling:**  
+  Provides AI-powered suggestions to auto-complete or enhance text.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Save Files:**  
+  Allows saving documents in various formats (.txt, .doc, .docx).
 
-### `npm run build`
+- **URL Support:**  
+  Automatically detects and hyperlinks valid URLs in the text.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🔮 Future Features
+- **Read-Only Mode:**  
+  Users will be able to open documents in a non-editable view.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Live Text Synchronization:**  
+  Enables real-time collaboration with multiple users editing the same document.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Setup Instructions
 
-### `npm run eject`
+1. **Clone the Repository:**
+   ```bash
+   git clone git@github.com:KNK2005/Collaborative-Text-Editor.git
+   cd Collaborative-Text-Editor
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Start the Server:**
+   ```bash
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Access the Application:**
+   Open your browser and go to:
+   ```
+   http://localhost:3000
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📂 Folder Structure
+```
+Collaborative-Text-Editor/
+├── node_modules/      # Dependencies (excluded from version control)
+├── public/            # Static assets (HTML, CSS, client-side JS)
+├── src/               # Source code for the backend and logic
+├── .gitignore         # Files/folders to ignore in version control
+├── package.json       # Project metadata and dependencies
+├── README.md          # Project overview and instructions
+```
 
-## Learn More
+## 🤝 Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+We welcome contributions! Please follow these steps:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Fork the repository.
+2. Create a new branch:  
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Make your changes and commit:  
+   ```bash
+   git commit -m "Added feature-name"
+   ```
+4. Push to your branch:  
+   ```bash
+   git push origin feature-name
+   ```
+5. Open a pull request on GitHub.
 
-### Code Splitting
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-### Analyzing the Bundle Size
+## 📧 Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+If you have any questions or feedback, feel free to open an issue or contact the project maintainers through GitHub.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy coding! 🚀
