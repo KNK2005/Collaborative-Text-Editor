@@ -4,6 +4,7 @@ const NavBar = () => {
     return (
         <nav>
             <div className="logo">
+                <img src="/SyncWriteLogo.jpg" alt="Logo"/>
             </div>
             <div className="slogan"><span>Where Ideas Flow, Together</span></div>
             <div className="links">

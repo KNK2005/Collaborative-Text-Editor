@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
     const [docID, setDocID] = useState();
-    const navigate = useNavigate(); // Initialize useNavigate
+    const [showModal, setShowModal] = useState(false);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const dropArea = document.getElementById('drop-area');
@@ -61,6 +62,26 @@ const HomePage = () => {
         handleFiles(files);
     };
 
+    const openModal = () => {
+        setShowModal(true);
+    };
+
+    const closeModal = () => {
+        setShowModal(false);
+    };
+
+    const createDocument = (fileType) => {
+        setShowModal(false);
+        if (fileType === "txt") {
+            console.log("Creating .txt document...");
+            navigate('/text-editor');
+        } else if (fileType === "doc") {
+            console.log("Creating .doc document...");
+            navigate('/word-editor');
+        }
+    };
+
+
     return (
         <>
             <div className="container">
@@ -74,9 +95,20 @@ const HomePage = () => {
                     placeholder="Enter Document ID"
                     value={docID}
                     onChange={e => setDocID(e.target.value)}
-                />
+                /><button onClick={openModal}>Create Document</button>
             </div>
-        </>
+
+            {showModal && (
+                <div className="modal">
+                    <div className="modal-content">
+                        <h3>Select File Type</h3>
+                        <button onClick={() => createDocument("txt")}>.txt</button>
+                        <button onClick={() => createDocument("doc")}>.doc</button>
+                        <button onClick={closeModal}>Cancel</button>
+                    </div>
+                </div>
+            )}
+            </>
     );
 }
 

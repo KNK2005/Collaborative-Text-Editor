@@ -11,12 +11,14 @@
   .logo {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
   }
-  
-  .logo img {
-    width: 50px; /* Adjust as needed */
+
+  .logo img{
+    width: 100px;
     height: auto;
-    margin-right: 10px;
+    margin-right: 20px;
+    padding-right: 20px;
   }
   
   .logo span {

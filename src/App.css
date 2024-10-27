@@ -112,7 +112,7 @@ nav a:hover {
 #file-label {
   display: inline-block;
   margin-top: 10px;
-  background-color: #007bff;
+  background-color: black;
   color: white;
   padding: 10px 15px;
   border-radius: 5px;
@@ -189,4 +189,43 @@ button:hover {
 
 .link a:hover {
   text-decoration: underline;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 300px;
+}
+
+.modal-content h3 {
+  margin-bottom: 20px;
+}
+
+.modal-content button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #333;
 }
