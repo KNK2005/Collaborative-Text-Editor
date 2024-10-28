@@ -75,8 +75,8 @@ const HomePage = () => {
         if (fileType === "txt") {
             console.log("Creating .txt document...");
             navigate('/text-editor');
-        } else if (fileType === "doc") {
-            console.log("Creating .doc document...");
+        } else if (fileType === "docx") {
+            console.log("Creating .docx document...");
             navigate('/word-editor');
         }
     };
@@ -88,7 +88,7 @@ const HomePage = () => {
                 <div id="drop-area">
                 <img src="/UploadIcon.jpg" alt="Drop Area Image" id="drop-image" />
                     <p>Drag and drop to Upload</p>
-                    <input type="file" id="fileElem" multiple accept=".txt, .doc, .docx" style={{ display: 'none' }} onChange={handleFileInputChange} />
+                    <input type="file" id="fileElem" multiple accept=".txt, .docx" style={{ display: 'none' }} onChange={handleFileInputChange} />
                     <label htmlFor="fileElem" id="file-label">Select Files</label>
                 </div>
                 <input
@@ -103,7 +103,7 @@ const HomePage = () => {
                     <div className="modal-content">
                         <h3>Select File Type</h3>
                         <button onClick={() => createDocument("txt")}>.txt</button>
-                        <button onClick={() => createDocument("doc")}>.doc</button>
+                        <button onClick={() => createDocument("docx")}>.docx</button>
                         <button onClick={closeModal}>Cancel</button>
                     </div>
                 </div>
