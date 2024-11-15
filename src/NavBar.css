@@ -1,54 +1,57 @@
 /* Navbar.css */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #e5e5e5; /* Light gray background color */
-    padding: 10px 20px;
-    border-bottom: 2px solid black;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e5e5e5; /* Light gray background color */
+  padding: 8px 16px; /* Smaller padding for a more compact look */
+  border-bottom: 2px solid black;
+}
 
-  .logo img{
-    width: 100px;
-    height: auto;
-    margin-right: 20px;
-    padding-right: 20px;
-  }
-  
-  .logo span {
-    font-family: 'cursive';
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .slogan {
-    font-size: 1.2rem;
-    font-family: Arial, sans-serif;
-  }
-  
-  .nav-links {
-    list-style-type: none;
-    display: flex;
-  }
-  
-  .nav-links li {
-    margin-left: 20px;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    color: black;
-    font-size: 1rem;
-  }
-  
-  .nav-links a:hover {
-    text-decoration: underline;
-  }
-  
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 150px; /* Smaller logo size */
+  padding-left: 1%;
+  padding-top: 1%;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-family: 'cursive';
+  font-size: 1.25rem; /* Adjust font size for a compact look */
+  font-weight: bold;
+}
+
+.slogan {
+  font-size: 1rem; /* Adjust font size for the slogan */
+  font-family: Arial, sans-serif;
+  margin-left: 8px; 
+  padding-bottom: 0px;
+  margin-top: -75px; /* Pull the slogan upwards */
+}
+
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 15px; /* Slightly reduce spacing between links */
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  color: black;
+  font-size: 0.9rem; /* Smaller font size for links */
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
