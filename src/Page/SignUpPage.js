@@ -75,8 +75,9 @@ const SignUp = () => {
 
           <button onClick={Signup}>Create Account</button><br /><br />
 
-          <Link to="/login">Already Have an Account? Login Here.</Link>
-        </div>
+          Already Have an Account? <Link to="/login" style={{ color: "blue", textDecoration: "none" }}>
+   Login Here.
+</Link>        </div>
       </div>
     </>
   );

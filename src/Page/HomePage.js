@@ -123,18 +123,23 @@ const HomePage = ({ username }) => {
           value={docID}
           onChange={(e) => setDocID(e.target.value)}
         />
-        <button onClick={joinDocument}>Join Document</button>
-        <button onClick={openModal}>Create Document</button>
+        <div class="side-by-side-container">
+
+        <button  className="joinDoc" onClick={joinDocument}>Join Document</button>
+        <button className="createDoc" onClick={openModal}>Create Document</button>
       </div>
+      </div>
+
 
       {showModal && (
         <div className="modal">
           <div className="modal-content">
             <h3>Select Document Type</h3>
+
             <button onClick={() => createDocument("txt")}>.txt</button>
             <button onClick={closeModal}>Cancel</button>
+            </div>
           </div>
-        </div>
       )}
     </>
   );
