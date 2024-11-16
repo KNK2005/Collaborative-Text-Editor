@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: #e5e5e5; /* Light gray background color */
-  padding: 8px 16px; /* Smaller padding for a more compact look */
+  padding: 8px 20px; /* Adjusted padding for a compact look */
   border-bottom: 2px solid black;
 }
 
@@ -15,9 +15,9 @@
 
 .logo img {
   width: 150px; /* Smaller logo size */
+  height: auto;
   padding-left: 1%;
   padding-top: 1%;
-  height: auto;
   margin-right: 10px;
 }
 
@@ -31,10 +31,10 @@
   font-size: 1rem; /* Adjust font size for the slogan */
   font-family: Arial, sans-serif;
   margin-left: 8px; 
-  padding-bottom: 0px;
-  margin-top: -75px; /* Pull the slogan upwards */
+  margin-top: -60px; /* Adjusted the slogan's vertical position */
+  padding-bottom: 0;
+  font-style: italic; /* Add italic style to the slogan */
 }
-
 
 .nav-links {
   list-style-type: none;
@@ -42,7 +42,7 @@
 }
 
 .nav-links li {
-  margin-left: 15px; /* Slightly reduce spacing between links */
+  margin-left: 20px; /* Slightly more space between links */
 }
 
 .nav-links a {
@@ -50,8 +50,17 @@
   font-family: Arial, sans-serif;
   color: black;
   font-size: 0.9rem; /* Smaller font size for links */
+  padding: 5px;
+  transition: color 0.3s ease; /* Smooth transition effect */
 }
 
 .nav-links a:hover {
   text-decoration: underline;
+  color: #007BFF; /* Change color on hover */
+}
+
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+  margin-top: -10px; /* Adjusted navbar vertical position */
 }

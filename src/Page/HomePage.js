@@ -1,15 +1,13 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import React from "react";
-import { v4 as uuidv4 } from "uuid"; // Import UUID for unique document ID generation
-import ReactQuill from "react-quill"; // Importing Quill for text editing
-import "react-quill/dist/quill.snow.css"; // Import Quill styles
+import { v4 as uuidv4 } from "uuid"; 
+import "react-quill/dist/quill.snow.css";
 
-const HomePage = () => {
+const HomePage = ({ username }) => {
   const [docID, setDocID] = useState("");
   const [showModal, setShowModal] = useState(false);
-  const [editorContent, setEditorContent] = useState(""); // State to hold editor content
-  const [fileName, setFileName] = useState(""); // To store the file name
+  const [editorContent, setEditorContent] = useState("");
+  const [fileName, setFileName] = useState(""); 
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -103,6 +101,8 @@ const HomePage = () => {
   return (
     <>
       <div className="container">
+        
+        <h1>Hi, {username}</h1> {/* Display the username here */}
         <div id="drop-area">
           <img src="/UploadIcon.jpg" alt="Drop Area" id="drop-image" />
           <p>Drag and drop to upload a document</p>

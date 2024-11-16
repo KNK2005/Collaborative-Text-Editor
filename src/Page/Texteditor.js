@@ -52,12 +52,7 @@ const TextEditor = ({ text, onTextChange }) => {
               >
                 Aa
               </button>
-              <input
-                type="color"
-                className="color-picker"
-                value={color}
-                onChange={(e) => setColor(e.target.value)}
-              />
+
             </div>
 
             <div className="toolbar-item">
