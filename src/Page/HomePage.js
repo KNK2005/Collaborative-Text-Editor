@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid"; 
 
-const HomePage = ({ username }) => {
+const HomePage = ({ username }) => {  
+  const displayName = username || "Guest";
+
   const [docID, setDocID] = useState("");
   const [showModal, setShowModal] = useState(false);
   const [editorContent, setEditorContent] = useState("");
@@ -51,12 +53,14 @@ const HomePage = ({ username }) => {
         const reader = new FileReader();
         reader.onload = (e) => {
           const fileContent = e.target.result;
+
           navigate(`/text-editor/${generatedDocID}`, { state: { content: fileContent, fileName } });
         };
         reader.onerror = () => {
           console.error("Error reading file");
         };
         reader.readAsText(file);
+
         break;
       } else {
         alert(`${fileName} is not a supported file format. Please upload a .txt file.`);
@@ -100,8 +104,7 @@ const HomePage = ({ username }) => {
   return (
     <>
       <div className="container">
-        
-        <h1>Hi, {username}</h1> {/* Display the username here */}
+        <h1>Hi, {displayName}</h1> {/* Display the username here */}
         <div id="drop-area">
           <img src="/UploadIcon.jpg" alt="Drop Area" id="drop-image" />
           <p>Drag and drop to upload a document</p>

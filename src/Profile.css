@@ -1,0 +1,73 @@
+/* Profile Page Styles */
+.profile-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  .user-info {
+    margin-bottom: 20px;
+  }
+  
+  .user-info p {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+  
+  h3 {
+    margin-top: 30px;
+    color: #333;
+  }
+  
+  .documents-table {
+    width: 100%;
+    border-color: black;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+  }
+  
+  .documents-table th,
+  .documents-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .documents-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .documents-table td a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .documents-table td a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+  
+  .error-message {
+    color: red;
+  }
+  
+  .logout-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .logout-btn:hover {
+    background-color: #d32f2f;
+  }
+  

@@ -7,9 +7,9 @@ import LoginPage from "./Page/Login";
 import TextEditor from "./Page/Texteditor";
 import AboutPage from "./Page/About";
 import NavBar from "./NavBar";
-import Profile from "./Profile";
 import Logout from "./Page/Logout"; // Import Logout component
 import Dashboard from "./DashBoard";
+import Profile from "./Profile"
 import './App.css';
 import './Page/TextEditor.css';
 

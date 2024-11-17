@@ -84,6 +84,47 @@ app.get('/api/user-profile', async (req, res) => {
   }
 });
 
+// Fetch Document by docId
+app.get('/api/document/:docId', async (req, res) => {
+  const { docId } = req.params;
+
+  try {
+    const document = await Document.findOne({ docId });
+
+    if (!document) {
+      return res.status(404).json({ message: 'Document not found' });
+    }
+
+    res.status(200).json({ content: document.content });
+  } catch (err) {
+    console.error('Error fetching document:', err);
+    res.status(500).json({ message: 'Server error while fetching document' });
+  }
+});
+
+// Fetch User-Specific Documents Route
+app.get('/api/user-documents', async (req, res) => {
+  const token = req.headers['authorization']?.split(' ')[1];
+  if (!token) return res.status(401).json({ message: "Unauthorized" });
+
+  try {
+    // Decode the token to get the user ID
+    const decoded = jwt.verify(token, 'secret');
+
+    // Find the user by their ID to get the username
+    const user = await User.findById(decoded.userId);
+    if (!user) return res.status(404).json({ message: "User not found" });
+
+    // Find documents by username and include their content
+    const documents = await Document.find({ username: user.username }).select('docId content'); // Select docId and content fields
+
+    res.status(200).json({ documents });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: "Failed to fetch user-specific documents." });
+  }
+});
+
 // Save Document Route
 app.post('/api/save-document', async (req, res) => {
   const { docId, username, content } = req.body;
@@ -123,14 +164,23 @@ io.on('connection', (socket) => {
 
   socket.on('join-document', (docId) => {
     socket.join(docId);
-    if (documents[docId]) {
-      socket.emit('load-text', documents[docId]);
-    } else {
-      documents[docId] = ""; // Initialize document if it doesn't exist
+    if (!documents[docId]) {
+      documents[docId] = { content: "", style: {} }; // Initialize document if it doesn't exist
     }
+
+    // Send initial content to the user
+    socket.emit('load-text', documents[docId].content);
+
+    // Listen for text changes
     socket.on('text-change', (newText) => {
-      documents[docId] = newText;
+      documents[docId].content = newText;
       socket.to(docId).emit('receive-text', newText);
+    });
+
+    // Listen for style changes
+    socket.on('style-change', (updatedStyle) => {
+      documents[docId].style = updatedStyle;
+      socket.to(docId).emit('receive-style', updatedStyle);
     });
   });
 
