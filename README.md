@@ -1,5 +1,5 @@
 
-# Collaborative Text Editor (SyncWrite)
+# SyncWrite: A Collaborative Text Editor for Seamless Real-Time Collaboration
 
 A **web-based collaborative text editor** designed to enhance writing productivity and foster teamwork. This editor supports real-time collaboration and includes features to streamline text editing and document sharing, making it an essential tool for teams and individuals alike. With this editor, managing documents becomes seamless, while collaboration is intuitive and efficient.
 
