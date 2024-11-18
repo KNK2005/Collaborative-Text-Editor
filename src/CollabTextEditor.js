@@ -137,7 +137,7 @@ const CollabTexteditor = () => {
           Copy Document ID
         </button>
         <button className="save-db-button" onClick={saveToDB}>
-          Save to DB
+          Save to Cloud
         </button>
       </div>
       <Texteditor
