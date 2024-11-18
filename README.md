@@ -5,6 +5,34 @@ A **web-based collaborative text editor** designed to enhance writing productivi
 
 ---
 
+You can check out the website here:[Visit the website](https://rn349h-3000.csb.app/)
+
+📸 Screenshots
+
+-Here is a Preview of the website:
+
+-Home Page:
+
+  ![Screenshot](Asset/Screenshot-1.png)
+-Signup Page:
+
+  ![Screenshot](Asset/Screenshot-2.png)
+-Login Page:
+
+  ![Screenshot](Asset/Screenshot-3.png)
+-Home Page after Logging in:
+
+  ![Screenshot](Asset/Screenshot-4.png)
+-Dashboard:
+
+  ![Screenshot](Asset/Screenshot-5.png)
+-Editor Page:
+
+  ![Screenshot](Asset/Screenshot-6.png)
+
+
+---
+
 ## 🚀 Features
 
 ### Supported File Types
@@ -142,31 +170,7 @@ For any questions, feedback, or bug reports, please open an issue on GitHub or r
 
 ---
 
-📸 Screenshots
 
--Here is a Preview of the website:
-
--Home Page:
-
-  ![Screenshot](Asset/Screenshot-1.png)
--Signup Page:
-
-  ![Screenshot](Asset/Screenshot-2.png)
--Login Page:
-
-  ![Screenshot](Asset/Screenshot-3.png)
--Home Page after Logging in:
-
-  ![Screenshot](Asset/Screenshot-4.png)
--Dashboard:
-
-  ![Screenshot](Asset/Screenshot-5.png)
--Editor Page:
-
-  ![Screenshot](Asset/Screenshot-6.png)
-
-
-You can check out the website here:[Visit the website](https://rn349h-3000.csb.app/)
 
 
 This editor is built to foster collaborative writing, with powerful tools integrated for error-free, creative, and efficient documentation. We look forward to your contributions and feedback to make this tool even better! 🚀
