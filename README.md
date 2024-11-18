@@ -7,30 +7,6 @@ A **web-based collaborative text editor** designed to enhance writing productivi
 
 You can check out the website here:[Visit the website](https://rn349h-3000.csb.app/)
 
-📸 Screenshots
-
--Here is a Preview of the website:
-
--Home Page:
-
-  ![Screenshot](Asset/Screenshot-1.png)
--Signup Page:
-
-  ![Screenshot](Asset/Screenshot-2.png)
--Login Page:
-
-  ![Screenshot](Asset/Screenshot-3.png)
--Home Page after Logging in:
-
-  ![Screenshot](Asset/Screenshot-4.png)
--Dashboard:
-
-  ![Screenshot](Asset/Screenshot-5.png)
--Editor Page:
-
-  ![Screenshot](Asset/Screenshot-6.png)
-
-
 ---
 
 ## 🚀 Features
@@ -171,6 +147,29 @@ This project is licensed under the **MIT License**. For more details, please ref
 ---
 
 ## 📧 Contact
+
+📸 Screenshots
+
+-Here is a Preview of the website:
+
+-Home Page:
+
+  ![Screenshot](Asset/Screenshot-1.png)
+-Signup Page:
+
+  ![Screenshot](Asset/Screenshot-2.png)
+-Login Page:
+
+  ![Screenshot](Asset/Screenshot-3.png)
+-Home Page after Logging in:
+
+  ![Screenshot](Asset/Screenshot-4.png)
+-Dashboard:
+
+  ![Screenshot](Asset/Screenshot-5.png)
+-Editor Page:
+
+  ![Screenshot](Asset/Screenshot-6.png)
 
 For any questions, feedback, or bug reports, please open an issue on GitHub or reach out to the project maintainers.
 
