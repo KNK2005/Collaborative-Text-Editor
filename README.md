@@ -55,13 +55,18 @@ You can check out the website here:[Visit the website](https://rn349h-3000.csb.a
 ## 📂 Folder Structure
 ```
 Collaborative-Text-Editor/
-├── Asset/             # Folder to store screenshots
-├── node_modules/      # Dependencies (excluded from version control)
-├── public/            # Static assets (HTML, CSS, client-side JavaScript)
-├── src/               # Backend logic and main source code
-├── .gitignore         # Files/folders to ignore in version control
-├── package.json       # Project metadata and dependencies
-├── README.md          # Project overview and instructions
+├── Asset                    # Contains assets like images, icons, and other static files
+├── public                   # Public files served by the application
+├── src                      # Source code of the application
+│ ├── components             # Reusable components
+│ ├── pages                  # Page-specific components or views
+│ └── index.js               # Entry point for the app
+├── .gitignore               # Git ignored files and folders
+├── LICENSE.md               # License file
+├── README.md                # Project documentation
+├── package-lock.json        # Dependency tree lock file
+├── package.json             # Project metadata and dependencies
+├── postcss.config.js        # PostCSS configuration file └── server.js # Backend server script
 ```
 
 ---
