@@ -146,12 +146,12 @@ For any questions, feedback, or bug reports, please open an issue on GitHub or r
 
 -Here is a Preview of the website:
 
--![Screenshot](Asset/Screenshot-1)
--![Screenshot](Asset/Screenshot-2)
--![Screenshot](Asset/Screenshot-3)
--![Screenshot](Asset/Screenshot-4)
--![Screenshot](Asset/Screenshot-5)
--![Screenshot](Asset/Screenshot-6)
+-![Screenshot](Asset/Screenshot-1.png)
+-![Screenshot](Asset/Screenshot-2.png)
+-![Screenshot](Asset/Screenshot-3.png)
+-![Screenshot](Asset/Screenshot-4.png)
+-![Screenshot](Asset/Screenshot-5.png)
+-![Screenshot](Asset/Screenshot-6.png)
 
 
 You can check out the website here:[Visit the website](https://rn349h-3000.csb.app/)
