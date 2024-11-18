@@ -1,7 +1,7 @@
 
 # Collaborative Text Editor
 
-A **web-based collaborative text editor** designed to enhance writing productivity by supporting multiple file formats and providing essential tools such as **grammar checking**, **plagiarism detection**, and **AI-powered text suggestions**. With this editor, managing documents becomes seamless, while collaboration is intuitive and efficient.
+A **web-based collaborative text editor** designed to enhance writing productivity and foster teamwork. This editor supports real-time collaboration and includes features to streamline text editing and document sharing, making it an essential tool for teams and individuals alike. With this editor, managing documents becomes seamless, while collaboration is intuitive and efficient.
 
 ---
 
@@ -9,24 +9,13 @@ A **web-based collaborative text editor** designed to enhance writing productivi
 
 ### Supported File Types
 - **`.txt`**  
-- **`.doc`**  
-- **`.docx`**
 
 ### Core Functionalities
-- **Grammar Checker (via Grammarly API):**  
-  Automatically identifies grammatical errors and suggests improvements in real time.
-
-- **Plagiarism Detection (via Winston AI):**  
-  Detects copied or unoriginal content by comparing text against multiple sources.
-
-- **Generative Text Suggestions:**  
-  Uses AI to provide auto-completion or enhancement suggestions for text input.
-
 - **Save Files:**  
-  Save documents in supported formats (.txt, .doc, .docx) with ease.
+  Save documents in supported formats (.txt) with ease.
+- **Real-Time Collaboration:**
+  Work with multiple users simultaneously, with changes synced in real time.
 
-- **URL Support:**  
-  Automatically recognizes valid URLs and converts them into clickable hyperlinks.
 
 ---
 
@@ -37,13 +26,25 @@ A **web-based collaborative text editor** designed to enhance writing productivi
 - **Live Text Synchronization:**  
   Allow multiple users to collaborate in real time, with all changes reflected instantly across devices.
 
+- **Enhanced Formatting Options:**  
+  Provide advanced text styling and formatting options, such as tables, headers, and code blocks.
+
+- **Support for More File Types:**  
+  Add compatibility for additional file formats such as:
+  - `.ppt` (PowerPoint Presentations)
+  - `.docx` (Word Documents)
+  - `.pdf` (Portable Document Format)
+
 ---
 
-## 🛠️ Technologies Used
-- **Grammarly API:** For real-time grammar checking.  
-- **Winston AI:** For robust plagiarism detection.  
-- **Firebase Authentication:** For secure user authentication and session management.  
-- **MongoDB:** For storing files and document metadata.  
+## 🛠️ Tech Stack
+
+- **Frontend:** React  
+- **Backend:** Node.js, Express  
+- **Database:** MongoDB  
+- **Real-Time Collaboration:** WebSockets (Socket.IO)
+- **Hosting:** Codesandbox
+
 
 ---
 
@@ -74,9 +75,8 @@ Collaborative-Text-Editor/
    ```
 
 3. **Set Up Firebase and MongoDB:**  
-   - Create a Firebase project for **authentication**.
    - Set up a **MongoDB** database for file storage.
-   - Add environment variables for Firebase and MongoDB configurations.
+   - Add environment variables for MongoDB configurations.
 
 4. **Start the Application:**  
    ```bash
@@ -88,6 +88,22 @@ Collaborative-Text-Editor/
    ```
    http://localhost:3000
    ```
+
+---
+
+## 👥 Contributors
+
+### Team Members and Their Contributions
+
+- **S Kaushik Nishaanth Kumar**  
+  - Designed and implemented the **frontend** using React.  
+  - Created UI components for seamless user experience.
+  - Contributed to deployment and testing.
+
+- **Sanidhya Kumar**  
+  - Developed the **backend** using Node.js and Express.  
+  - Implemented **database schemas** and integrated MongoDB.
+  - Integrated **real-time collaboration** features using WebSockets.  
 
 ---
 
