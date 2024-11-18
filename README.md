@@ -79,6 +79,7 @@ You can check out the website here:[Visit the website](https://rn349h-3000.csb.a
 ## 📂 Folder Structure
 ```
 Collaborative-Text-Editor/
+├── Asset/             # Folder to store screenshots
 ├── node_modules/      # Dependencies (excluded from version control)
 ├── public/            # Static assets (HTML, CSS, client-side JavaScript)
 ├── src/               # Backend logic and main source code
@@ -106,12 +107,17 @@ Collaborative-Text-Editor/
    - Set up a **MongoDB** database for file storage.
    - Add environment variables for MongoDB configurations.
 
-4. **Start the Application:**  
+4. **Start the Backend Server:**  
+   ```bash
+   node server.js
+   ```
+   
+5. **Start the Application:**  
    ```bash
    npm start
    ```
 
-5. **Access the Editor:**  
+6. **Access the Editor:**  
    Open your browser and navigate to:  
    ```
    http://localhost:3000
