@@ -29,7 +29,7 @@ const CollabTexteditor = () => {
   // Fetch initial document content
   useEffect(() => {
     const fetchDocument = async () => {
-      const response = await fetch(`http://localhost:4000/api/document/${docId}`);
+      const response = await fetch(`http://localhost:4000/api/text-editor/${docId}`);
       const data = await response.json();
       setText(data.content || '');
     };
