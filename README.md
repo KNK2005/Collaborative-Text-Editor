@@ -3,9 +3,8 @@
 
 A **web-based collaborative text editor** designed to enhance writing productivity and foster teamwork. This editor supports real-time collaboration and includes features to streamline text editing and document sharing, making it an essential tool for teams and individuals alike. With this editor, managing documents becomes seamless, while collaboration is intuitive and efficient.
 
----
 
-You can check out the website here:[Visit the website](https://rn349h-3000.csb.app/)
+You can check out the website here: [Visit the website](https://rn349h-3000.csb.app/)
 
 ---
 
@@ -55,18 +54,20 @@ You can check out the website here:[Visit the website](https://rn349h-3000.csb.a
 ## 📂 Folder Structure
 ```
 Collaborative-Text-Editor/
-├── Asset                    # Contains assets like images, icons, and other static files
-├── public                   # Public files served by the application
+├── Asset/                   # Contains assets like images, icons, and other static files
+├── public/                  # Public files served by the application
 ├── src                      # Source code of the application
 │ ├── components             # Reusable components
-│ ├── pages                  # Page-specific components or views
+│ ├── Page/                  # Page-specific components or views
 │ └── index.js               # Entry point for the app
 ├── .gitignore               # Git ignored files and folders
 ├── LICENSE.md               # License file
 ├── README.md                # Project documentation
-├── package-lock.json        # Dependency tree lock file
 ├── package.json             # Project metadata and dependencies
-├── postcss.config.js        # PostCSS configuration file └── server.js # Backend server script
+├── postcss.config.js        # PostCSS configuration file 
+├──.env                      # MongoDB auth link
+└── server.js                # Backend server script
+
 ```
 
 ---
