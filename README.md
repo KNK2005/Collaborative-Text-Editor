@@ -13,18 +13,18 @@ A **web-based collaborative text editor** designed to enhance writing productivi
 ### Core Functionalities
 - **Save Files:**  
   Save documents in supported formats (.txt) with ease.
+  
 - **Real-Time Collaboration:**
   Work with multiple users simultaneously, with changes synced in real time.
 
+- **Cloud Integration for File Management:**  
+  Save files to the cloud and retrieve them anytime for seamless accessibility across devices.
 
 ---
 
 ## 🔮 Future Features
 - **Read-Only Mode:**  
   Enable non-editable views for documents, useful for reviewers and readers.
-
-- **Live Text Synchronization:**  
-  Allow multiple users to collaborate in real time, with all changes reflected instantly across devices.
 
 - **Enhanced Formatting Options:**  
   Provide advanced text styling and formatting options, such as tables, headers, and code blocks.
@@ -74,7 +74,7 @@ Collaborative-Text-Editor/
    npm install
    ```
 
-3. **Set Up Firebase and MongoDB:**  
+3. **Set Up MongoDB:**  
    - Set up a **MongoDB** database for file storage.
    - Add environment variables for MongoDB configurations.
 
@@ -141,5 +141,15 @@ This project is licensed under the **MIT License**. For more details, please ref
 For any questions, feedback, or bug reports, please open an issue on GitHub or reach out to the project maintainers.
 
 ---
+
+📸 Screenshots
+Here is a Preview of the website:
+
+
+
+
+
+[Visit the website](https://rn349h-3000.csb.app/)
+
 
 This editor is built to foster collaborative writing, with powerful tools integrated for error-free, creative, and efficient documentation. We look forward to your contributions and feedback to make this tool even better! 🚀
