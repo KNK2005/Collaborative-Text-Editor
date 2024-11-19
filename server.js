@@ -162,24 +162,29 @@ let documents = {}; // Store documents by ID
 io.on('connection', (socket) => {
   console.log('A user connected');
 
-  socket.on('join-document', (docId) => {
+  socket.on('join-document', async (docId) => {
     socket.join(docId);
-    if (!documents[docId]) {
-      documents[docId] = { content: "", style: {} }; // Initialize document if it doesn't exist
-    }
 
-    // Send initial content to the user
-    socket.emit('load-text', documents[docId].content);
+    // Fetch the document from the database
+    try {
+      const document = await Document.findOne({ docId });
+      if (document) {
+        // Send the content to the newly joined user
+        socket.emit('load-text', document.content);
+      }
+    } catch (err) {
+      console.error('Error fetching document:', err);
+    }
 
     // Listen for text changes
     socket.on('text-change', (newText) => {
-      documents[docId].content = newText;
+      // Broadcast the updated text to all other users
       socket.to(docId).emit('receive-text', newText);
     });
 
     // Listen for style changes
     socket.on('style-change', (updatedStyle) => {
-      documents[docId].style = updatedStyle;
+      // Broadcast the updated style to all other users
       socket.to(docId).emit('receive-style', updatedStyle);
     });
   });
@@ -188,6 +193,7 @@ io.on('connection', (socket) => {
     console.log('A user disconnected');
   });
 });
+
 
 // Server Setup
 const PORT = process.env.PORT || 4000;

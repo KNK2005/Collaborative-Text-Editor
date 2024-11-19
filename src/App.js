@@ -12,7 +12,7 @@ import Dashboard from "./DashBoard";
 import Profile from "./Profile"
 import './App.css';
 import './Page/TextEditor.css';
-
+import NotFoundPage from "./Page/NotFoundPage";
 function App() {
   const [username, setUsername] = useState("");
 
@@ -34,7 +34,10 @@ function App() {
     setUsername(""); // Reset the username state to trigger re-render
   };
 
-  
+  useEffect(() => {
+    localStorage.removeItem("fileContent");
+  }, []);
+
   return (
     <Router>
       <div className="App">
@@ -60,7 +63,8 @@ function App() {
             <Route path="/logout" element={<Logout handleLogout={handleLogout} />} />
             <Route path="/dashboard" element={isLoggedIn ? <Dashboard /> : <Navigate to="/login" />} />
 
-            
+            <Route path="*" element={<NotFoundPage />} />
+
           </Routes>
         </div>
       </div>

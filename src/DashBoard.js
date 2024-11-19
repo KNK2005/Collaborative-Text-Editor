@@ -72,53 +72,6 @@ const Dashboard = () => {
     <div className="dashboard">
       <h2>Welcome to your Dashboard</h2>
 
-      {error ? (
-        <div className="error">{error}</div>
-      ) : (
-        <>
-          <div>
-            <strong>Username:</strong> {userInfo.username || "Loading..."}
-          </div>
-          <div>
-            <strong>Email:</strong> {userInfo.email || "Loading..."}
-          </div>
-          <h3>Your Saved Documents</h3>
-          <table>
-            <thead>
-              <tr>
-                <th>Serial No.</th>
-                <th>Document ID</th>
-                <th>Preview</th>
-              </tr>
-            </thead>
-            <tbody>
-              {documents.length > 0 ? (
-                documents.map((doc, index) => (
-                  <tr key={doc.docId}>
-                    <td>{index + 1}</td>
-                    <td>{doc.docId}</td>
-                    <td>
-                      <a
-                        href="#"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          openTextEditor(doc.docId);
-                        }}
-                      >
-                        {doc.content.slice(0, 20)}...
-                      </a>
-                    </td>
-                  </tr>
-                ))
-              ) : (
-                <tr>
-                  <td colSpan="3">No documents found.</td>
-                </tr>
-              )}
-            </tbody>
-          </table>
-        </>
-      )}
     </div>
   );
 };
